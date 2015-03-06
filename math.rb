@@ -49,26 +49,39 @@ def area_of_ring(outer, inner)
   area_of_disk(outer) - area_of_ring(inner)
 end
 
+def sum(array)
+  result = 0
+
+  array.each do |x|
+    result += x
+  end
+
+  result
+end
+
 # Define a function to calculate average of numbers in given array
 #
 # Keywords
 #
-# * inject
 # * array
 #
 def average(array)
-  total = array.inject(0.0) {|x, y| x + y }
-  total / array.size
+  total = sum(array)
+  total.to_f / array.size
 end
 
 # Define a function to calculate variance of numbers in given array
 #
 # Keywords
 #
-# * inject
 # * array
 #
 def variance(array)
   average = average(array)
-  array.inject(0) {|x, y| x + (average - y)**2 }
+
+  result = 0
+  array.each do |x|
+    result += (average - x)**2
+  end
+  result
 end
