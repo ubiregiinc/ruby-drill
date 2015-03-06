@@ -42,7 +42,7 @@ def max(a, b)
 end
 
 def area_of_disk(radius)
-  Math::PI * radius^2
+  Math::PI * radius**2
 end
 
 def area_of_ring(outer, inner)
