@@ -25,7 +25,7 @@ end
 # * ternary operator
 #
 def min(a, b)
-  a < b ? b : a
+  a < b ? a : b
 end
 
 # Examples
