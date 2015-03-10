@@ -46,7 +46,7 @@ def area_of_disk(radius)
 end
 
 def area_of_ring(outer, inner)
-  area_of_disk(outer) - area_of_ring(inner)
+  area_of_disk(outer) - area_of_disk(inner)
 end
 
 def sum(array)
