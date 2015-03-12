@@ -83,5 +83,5 @@ def variance(array)
   array.each do |x|
     result += (average - x)**2
   end
-  result
+  result / array.size
 end
