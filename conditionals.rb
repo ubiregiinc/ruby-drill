@@ -35,7 +35,7 @@ def tax(amount)
     0
   elsif amount <= 480
     amount * 0.15
-  elsif
+  else
     amount * 0.28
   end
 end
