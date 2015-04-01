@@ -119,13 +119,13 @@ end
 def fizz_buzz2(seq)
   seq.map {|n|
     if n % 3 == 0 && n % 5==0
-      result << "Fizz Buzz"
+      "Fizz Buzz"
     elsif n % 3 == 0
-      result << "Fizz"
+      "Fizz"
     elsif n % 5 == 0
-      result << "Buzz"
+      "Buzz"
     else
-      result << n
+      n
     end
   }
 end
