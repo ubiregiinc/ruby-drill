@@ -66,7 +66,7 @@ end
 #
 # * テストケースについて
 #
-def assoc_remove(ass, key, value)
+def assoc_remove(ass, key)
   result = []
 
   ass.each do |(k, v)|
